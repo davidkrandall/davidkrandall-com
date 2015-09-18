@@ -1,0 +1,87 @@
+/* Needed for a fluid height: */
+html, body, .container, .main
+{
+	height: 33em;
+	}
+
+/* main wrapper */
+.cbp-contentslider {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.cbp-contentslider > ul {
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.cbp-contentslider > ul li {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #ffffff;
+}
+
+/* Whithout JS, we use :target */
+.cbp-contentslider > ul li:target {
+	z-index: 100;
+}
+
+.cbp-contentslider nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 3.000em;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+/*Nav Text*/
+
+.cbp-contentslider nav a {
+	float: left;
+	display: block;
+	width: 20%;
+	height: 100%;
+	/*font-weight: 700;*/
+	font-size: 0.750em;
+	letter-spacing: 0.1em;
+	overflow: hidden;
+	text-decoration: none;
+	color: #585958;
+	background: #F2F2F2;
+	outline: none;
+	text-align: center;
+	line-height: 4.250em;
+	position: relative;
+	text-transform: uppercase;
+	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.cbp-contentslider nav a:last-child {
+	border: none;
+	box-shadow: 5px 0 #F2F2F2; /* fills gap caused by rounding */
+}
+
+.cbp-contentslider nav a:hover {
+	background-color: #C0C0C0;
+	color: #fff;
+}
+
+.cbp-contentslider nav a.rc-active {
+	background-color: #C0C0C0;
+	color: #FFFFFF;
+}
+
+
+
