@@ -127,8 +127,11 @@ Headers
 
 .topsectionheader {
     width: 100%;
-    height: 4.00em;
-    background-color: #000000;
+    height: 3.00em;
+
+    background-color: #EFEFEF;
+    position: fixed;
+    opacity: .8;
 }
 
 .connectsectionheader {
@@ -188,6 +191,11 @@ a.sectionheadertext {
     display: none;
 }
 
+.hero-text {
+    margin: 10rem 0 4rem 3rem;
+    color: white;
+}
+
 /* ***********************************************************************************
 TOP
 ************************************************************************************ */
@@ -196,8 +204,10 @@ TOP
 .topsection {
     font-size: 3.500em;
     font-family: 'new_ciclefina', Arial;
-    margin: 10 10 10 10;
-    padding: 20 20 20 20;
+    padding: 20px 0;
+
+    background-image: url(../img/tahoe.jpg);
+    background-size: cover;
 }
 
 .headerimage {
