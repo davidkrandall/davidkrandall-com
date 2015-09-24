@@ -1,8 +1,3 @@
-/* Needed for a fluid height: */
-html, body, .container, .main
-{
-	height: 33em;
-	}
 
 /* main wrapper */
 .cbp-contentslider {
@@ -39,7 +34,7 @@ html, body, .container, .main
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 3.000em;
+	height: 6rem;
 	z-index: 1000;
 	overflow: hidden;
 }
@@ -52,15 +47,15 @@ html, body, .container, .main
 	width: 20%;
 	height: 100%;
 	/*font-weight: 700;*/
-	font-size: 0.750em;
-	letter-spacing: 0.1em;
+	/*font-size: 1.5rem;*/
+	letter-spacing: 0.2rem;
 	overflow: hidden;
 	text-decoration: none;
 	color: #585958;
-	background: #F2F2F2;
+	background: #FCFCFC;
 	outline: none;
 	text-align: center;
-	line-height: 4.250em;
+	line-height: 6.5rem;
 	position: relative;
 	text-transform: uppercase;
 	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;

@@ -2,17 +2,6 @@
 Fonts
 ************************************************************************************ */
 
-@font-face {
-    font-family: 'new_ciclefina';
-    src: url('fonts/New_Cicle_Fina-webfont.eot');
-    src: url('fonts/New_Cicle_Fina-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/New_Cicle_Fina-webfont.woff') format('woff'),
-         url('fonts/New_Cicle_Fina-webfont.ttf') format('truetype'),
-         url('fonts/New_Cicle_Fina-webfont.svg#new_ciclefina') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 @font-face {
     font-family: 'open_sansregular';
@@ -23,7 +12,6 @@ Fonts
          url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -50,10 +38,46 @@ Fonts
 
 }
 
+@font-face {
+    font-family: 'montserratbold';
+    src: url('fonts/montserrat-bold-webfont.eot');
+    src: url('fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/montserrat-bold-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-bold-webfont.woff') format('woff'),
+    url('fonts/montserrat-bold-webfont.ttf') format('truetype'),
+    url('fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/montserrat-light-webfont.eot');
+    src: url('fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/montserrat-light-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-light-webfont.woff') format('woff'),
+    url('fonts/montserrat-light-webfont.ttf') format('truetype'),
+    url('fonts/montserrat-light-webfont.svg#montserratlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 
 /* ***********************************************************************************
 Basics
 ************************************************************************************ */
+
+
+/* Needed for a fluid height: */
+html, body, .container, .main
+{
+    height: 70rem;
+}
+
+
 
 .left {
     float: left;
@@ -69,17 +93,32 @@ Basics
 
 body {
   margin: 0;
-  font-family: 'new_ciclefina' Arial;
+  font-family: 'montserratlight', Arial;
   background-color: #ffffff;
   letter-spacing: 1.5px;
+}
+
+html { font-size: 62.5%;
 }
 
 .section {
     width: 800px;
 }
 
+.section-wide {
+    max-width: 1200px;
+}
+
+.innersection-wide {
+    max-width: 1200px;
+ }
+
 .innersection {
-    width: 800px;
+    max-width: 800px;
+}
+
+.herosection {
+    max-width: 1200px;
 }
 
 .mainsection {
@@ -89,15 +128,15 @@ body {
 }
 
 .spacer {
-    height: 2.000em;
+    height: 4rem;
 }
 
 .topspacer {
-    height: 1.000em;
+    height: 2rem;
 }
 
 .spacerinline {
-    height: 0.250em;
+    height: 0.5rem;
 }
 
 .connectcolor {
@@ -111,12 +150,12 @@ body {
 }
 
 .projectcolor {
-    color: #F7941E;
+    color: #0076A4;
     text-decoration: none;
 }
 
 .slidersection {
-    height: 30em;
+    height: 60rem;
 }
 
 
@@ -127,74 +166,57 @@ Headers
 
 .topsectionheader {
     width: 100%;
-    height: 3.00em;
-
-    background-color: #EFEFEF;
+    height: 6.00rem;
+    background-color: rgba(239, 239, 239, 0.8);
     position: fixed;
-    opacity: .8;
+    z-index: 10000;
 }
 
 .connectsectionheader {
     width: 100%;
-    height: 3.00em;
+    height: 6.00rem;
     background-color: #00AEEF;
 }
 
-.aboutsectionheader {
-    height: 3.00em;
-    background-color: #00AEEF/*#00A651*/;
-}
 
-
-.projectssectionheader {
-    width: 100%;
-    height: 3.00em;
-    background-color: #F7941E;
-}
-
-.sectionheadertext {
-    font-size: 1.500em;
-    line-height: 2.000em;
-    color: #ffffff;
-    font-family:'new_ciclefina', Arial;
+.navbar {
+    margin: 0 1rem 0 0;
 }
 
 
 .sectionheaderlink {
-    font-size: 1.000em;
-    line-height: 3.000em;
+    font-size: 2rem;
+    line-height: 6rem;
     color: #ffffff;
-    font-family:'new_ciclefina', Arial;
+    font-family:'montserratlight', Arial;
 }
 
 a.sectionheadertext {
     text-decoration: none;
-    font-size: 1.000em;
-    line-height: 4.000em;
+    font-size: 2rem;
+    line-height: 8rem;
 }
 
 .footer {
     width: 100%;
-    height: 4.00em;
-    background-color: #000000;
+    height: 60rem;
+    background-color: #333333;
     margin: 0 0 0 0;
 }
 
-.footertext a {
-    font-size: 1.000em;
-    line-height: 4.000em;
-    color: #fff;
-    font-family: 'new_ciclefina';
+.footertext p {
+    font-size: 1.2rem;
+    line-height: 15rem;
+    color: #FFFFFF;
+    font-family: 'montserratlight';
+    text-align: center;
 }
 
 #roundheader {
     display: none;
 }
 
-.hero-text {
-    margin: 10rem 0 4rem 3rem;
-    color: white;
-}
+
 
 /* ***********************************************************************************
 TOP
@@ -202,23 +224,34 @@ TOP
 
 
 .topsection {
-    font-size: 3.500em;
-    font-family: 'new_ciclefina', Arial;
     padding: 20px 0;
-
     background-image: url(../img/tahoe.jpg);
     background-size: cover;
 }
+
 
 .headerimage {
     position: absolute;
 }
 
 .headerimage img {
-    height: 2em;
-    margin: 1em 0 0 0;
+    height: 6rem;
 }
 
+.headericon img {
+    height: 5rem;
+    margin: .5rem 0 .5rem 0;
+}
+
+.cta-wrapper a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.cta-wrapper a:hover  {
+    background-color: #0077A3;
+    color: #EFEFEF;
+}
 
 /* ***********************************************************************************
 CONNECT
@@ -262,18 +295,14 @@ CONNECT
 ABOUT
 ************************************************************************************ */
 
-.aboutimage {
-    width: 100%;
-}
-
 .aboutimage img {
-    max-width: 120%;
+    width: 100%;
 }
 
 .aboutblock {
     width: 30%;
     margin: 5% 0 0 65%;
-    height: 33em;
+    height: 66rem;
     background-color: #fff;
     position: absolute;
 }
@@ -281,8 +310,8 @@ ABOUT
 
 .behindnav {
     width: 100%;
-    margin: 33.3em 0 0 0;
-    height: 3em;
+    margin: 66.6rem 0 0 0;
+    height: 6rem;
     background-color: #F2F2F2;
     position: absolute;
     z-index: 900;
@@ -301,7 +330,7 @@ ABOUT
 .aboutblocktext {
     margin: 0 10% 10% 10%;
     font-family: 'open_sansregular', times;
-    font-size: .9em;
+    font-size: 1.4rem;
     letter-spacing: 0px;
 }
 
@@ -311,24 +340,27 @@ ABOUT
 
 .aboutnextbuttons{
     width:100%;
-    height: 3em;
-    margin: 15em 0 0 0;
+    height: 6rem;
+    margin: 30rem 0 0 0;
     position: absolute;
 /*    z-index: 2;*/
 }
 
 .jobtitle {
-    font-family: 'open_sansbold';
+    font-family: 'montserratlight';
+    text-transform: uppercase;
 }
 
 .jobyears {
-    font-family: 'open_sanssemibold';
+    font-family: 'montserratlight';
+    text-transform: uppercase;
+
 }
 
 .aboutblockbelow {
     width: 100%;
-    margin: 20em 0 0 0;
-    height: 10em;
+    margin: 40rem 0 0 0;
+    height: 20rem;
     background-color: #fff;
     position: absolute;
 }
@@ -370,7 +402,7 @@ ABOUT
 
 .aboutblocktextbelow {
     width: 65%;
-    margin: 1em 5% 1em 0;
+    margin: 2rem 5% 2rem 0;
 }
 
 .aboutmenarrow {
@@ -391,8 +423,8 @@ PROJECTS
 
 figure {
 display: block;
--webkit-margin-before: 0em;
--webkit-margin-after: 0em;
+-webkit-margin-before: 0rem;
+-webkit-margin-after: 0rem;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;
 }
@@ -405,36 +437,36 @@ figure.item img {
 .projectcaptioncontainer {
     width: 50%;
     float: left;
-    margin: auto 0 auto .5em;
+    margin: auto 0 auto 1rem;
 }
 
 .projectcaptioncontainer p {
     font-family: 'open_sansregular';
     letter-spacing: 0px;
-    font-size: .8em;
+    font-size: 1.6rem;
 }
 
 .projectcaption {
     width: 100%;
-    margin: 23em 0 0 0;
-    height: 2em;
+    margin: 46rem 0 0 0;
+    height: 4rem;
     background-color: #fff;
     position: absolute;
     opacity: 0.75;
 }
 
 .projectcaptiontext {
-    margin: .5em 2.5% 0 2.5%;
-    font-size: .9em;
+    margin: 1rem 2.5% 0 2.5%;
+    font-size: 1.8rem;
     font-family: 'open_sansregular';
     letter-spacing: 0px;
     
 }
 
 .nextbuttons {
-    height: 3em;
-    width: 1.5em;
-    margin: 10em 0 0 0;
+    height: 3rem;
+    width: 3rem;
+    margin: 20rem 0 0 0;
    /* position: absolute;*/
 }
 
@@ -445,52 +477,19 @@ figure.item img {
 }
 
 .nextbuttonsimg {
-    height: 3em;
-    max-width: 1.5em;
+    height: 6rem;
+    max-width: 3rem;
 }
 
 .projsection {
     width: 31%;
     float: left;
-    margin: 1em 2% 0 0;
+    margin: 2rem 2% 0 0;
     font-family: 'open_sansregular';
     letter-spacing: 0px;
 }
 
-.projtitle {
-    width: 100%;
-    float: left;
-    margin: 1em 0 0 0;
-    font-family: 'open_sanssemibold';
-    letter-spacing: 0px;
-}
 
-.projtitle h3 {
-    font-size: 1.4em;
-    color: #F7941E;
-    font-family: 'open_sanssemibold';
-    letter-spacing: 0px;
-}
-
-.projsection h5 {
-    font-size: .9em;
-    font-family: 'open_sanssemibold';
-    letter-spacing: 0px;
-}
-
-
-ul {
-    font-size: .9em;
-    font-family: 'open_sansregular';
-    letter-spacing: 0px;
-    
-}
-
-.projsection p {
-    font-size: .8em;
-    font-family: 'open_sansregular';
-    letter-spacing: 0px; 
-}
 
 
 .projroles ul { list-style: none;}
@@ -498,7 +497,7 @@ ul {
 
 .projroles li:before {
     font-family: FontAwesome;
-    margin: 0 0.5em 0 0;
+    margin: 0 1rem 0 0;
 }
 
 .projroles li.full:before {
@@ -520,9 +519,9 @@ ul {
 }
 
 .projectspacer {
-    height: .125em;
-    background-color: #F7941E;
-    margin: 2em auto 2em auto;
+    height: .25rem;
+    background-color: #0076A4;
+    margin: 4rem auto 4rem auto;
 }
 
 .project {
@@ -602,7 +601,7 @@ PROJECT SLIDER
   padding-bottom: 3px;
 }
 .infoBlock p {
-  font-size: .9em;
+  font-size: 1.8rem;
   margin: 4px 0 0;
   font-family: open_sansregular;
   letter-spacing: 0px;
@@ -638,25 +637,25 @@ PROJECT SLIDER
   left: 0px;
   bottom: 0px;
   width: 100%;
-  height: 3em;
+  height: 6rem;
   background: rgba(0,0,0,0.4);
   overflow: hidden;
 }
 
 .pagingbox div p {
-    line-height: 3em;
-    width: 50%;
-    margin: 0 0 0 .5em;
+    line-height: 6rem;
+    width: 70%;
+    margin: 0 0 0 1rem;
 }
 
 .pagingbox div p span {
     line-height: normal;
     display: inline-block;
     vertical-align: middle;
-    font-size: .8em;
+    font-size: 1.4rem;
     letter-spacing: 0px;
     font-family: 'open_sansregular';
-    padding-bottom: .25em;
+    padding-bottom: .5rem;
 }
 
 
@@ -668,6 +667,38 @@ MEDIA QUERIES
 
 
 @media screen and (max-width: 5000px) {
+
+    .aboutsectionheader {
+        height: 10.00rem;
+        background-color: rgba(239, 239, 239, 0.6);
+    }
+
+    .sectionheadertext {
+        font-size: 2rem;
+        line-height: 10rem;
+        text-transform: uppercase;
+        color: #0077A3;
+        font-family:'montserratlight', Arial;
+        margin-left: 2rem;
+    }
+
+    .cta-wrapper {
+        background-color: #0077A3;
+        width: 180px;
+        height: 35px;
+        font-size: 1.6rem;
+        line-height: 3.4rem;
+        font-family: 'montserratlight', Arial;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem 0 0 0;
+    }
+
+    .cta-button:hover {
+        background-color: #DD2365;
+        width: 180px;
+        height: 35px;
+    }
 
 	.aboutblock {
 	    display: block;
@@ -683,34 +714,161 @@ MEDIA QUERIES
 		width: -webkit-calc(100% / 5);
 		width: calc(100% / 5);
 	}
+    .cbp-contentslider nav a {
+        font-size: 1.5rem;
+    }
+    .projectssectionheader {
+        margin-bottom: 4rem;
+    }
+    .hero-text {
+        margin: 30% 8rem 10% 8rem;
+        color: white;
+    }
+    .hero-text h1 {
+        font-size: 7.200rem;
+        font-family: 'montserratbold', Arial;
+        font-weight: normal;
+        letter-spacing: 0;
+    }
+
+    .hero-text h3 {
+        font-size: 3.400rem;
+        font-family: 'montserratlight', Arial;
+        font-weight: 100;
+        letter-spacing: 0;
+    }
+
+    .projtitle {
+        width: 100%;
+        float: left;
+        margin: 2rem 0 0 0;
+        font-family: 'open_sanssemibold';
+        letter-spacing: 0px;
+    }
+
+    .projtitle h3 {
+        font-size: 2.4rem;
+        color: #0077A3;
+        font-family: 'montserratlight';
+        text-transform: uppercase;
+        letter-spacing: 0px;
+    }
+
+    .projsection h5 {
+        font-size: 1.8rem;
+        font-family: 'montserratlight';
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        color: #323232;
+    }
+
+
+    ul {
+        font-size: 1.4rem;
+        font-family: 'open_sansregular';
+        letter-spacing: 0px;
+
+    }
+
+    .projsection p {
+        font-size: 1.4rem;
+        font-family: 'open_sansregular';
+        letter-spacing: 0px;
+    }
+
+    .topsection {
+        padding: 20px 0;
+        background-image: url(../img/tahoe.jpg);
+        background-size: cover;
+    }
+
+
 }
 
 
-@media screen and (max-width: 1000px) {
 
-	.section {
-	    width: 80%;
-	}
-	.innersection {
-	    width: 80%;
-	}
+
+@media screen and (max-width: 980px) {
+
+    html, body, .container, .main {
+        height: 55rem;
+    }
+
+    .cbp-contentslider nav a {
+        font-size: 1.2rem;
+    }
+    .hero-text {
+        margin: 25% 8rem 5% 8rem;
+        color: white;
+    }
+
 }
+
 
 @media screen and (max-width: 750px) {
 
 	.topsection {
-	    font-size: 3.000em;
+	    font-size: 6rem;
 	}
-	
+
+    .hero-text {
+        margin: 25% 8rem 5% 4rem;
+        color: white;
+    }
+
+    .hero-text h1 {
+        font-size: 6rem;
+        font-family: 'montserratbold', Arial;
+        font-weight: normal;
+        letter-spacing: 0;
+    }
+
+    .hero-text h3 {
+        font-size: 2.4rem;
+        font-family: 'montserratlight', Arial;
+        font-weight: 100;
+        letter-spacing: 0;
+    }
+
+
+    .aboutsection {
+        height: 70rem;
+    }
+
+
+    .cta-wrapper {
+        background-color: #0077A3;
+        width: 130px;
+        height: 24px;
+        font-size: 1.2rem;
+        line-height: 2.3rem;
+        font-family: 'montserratlight', Arial;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem 0 0 0;
+    }
+
+    .cta-button:hover {
+        background-color: #DD2365;
+        width: 130px;
+        height: 24px;
+    }
+
+    .projectssectionheader {
+        margin-bottom: 0rem;
+    }
+
 	.aboutblock {
 	    display: none;
 	}
 	.aboutblockbelow {
+        height: 16rem;
+        margin: 33rem 0 0 0;
 	    display: block;
 	}
 	.aboutimage {
 	    height: 60%;
-	    width: 90%;
+	    width: 100%;
 	}
 	.aboutimage img{
 	    max-width: 120%;
@@ -724,7 +882,7 @@ MEDIA QUERIES
 	.projsection {
 	    width: 100%;
 	    float: left;
-	    margin: 1em 2% 0 0;
+	    margin: 2rem 2% 0 0;
 	}
 	.innersection {
 	    width: 95%;
@@ -734,13 +892,8 @@ MEDIA QUERIES
 		width: -webkit-calc(100% / 4);
 		width: calc(100% / 4);
 	}
-	.aboutblockbelow {
-	    height: 11em;
-	    margin: 23em 0 0 0;	
-	}
-	.aboutsection {
-	    height: 35em;
-	}
+
+
 	.infoBlock {
 	  padding: 10px;
 	  height: auto;
@@ -757,12 +910,53 @@ MEDIA QUERIES
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 625px) {
+
+    html, body, .container, .main {
+        height: 45rem;
+    }
+
 	.topsection {
-	    font-size: 2.250em;
+	    font-size: 4.5rem;
+        padding-top: 3rem;
 	}
 
-	.aboutmewide {
+    .hero-text {
+        margin: 30% 4rem 5% 2rem;
+        color: white;
+    }
+
+    .hero-text h1 {
+        font-size: 3.4rem;
+        font-family: 'montserratbold', Arial;
+        font-weight: normal;
+        letter-spacing: 0;
+    }
+
+    .hero-text h3 {
+        font-size: 1.6rem;
+        font-family: 'montserratlight', Arial;
+        font-weight: 100;
+        letter-spacing: 0;
+    }
+
+    .aboutsectionheader {
+        height: 5.00rem;
+        background-color: rgba(239, 239, 239, 0.6);
+    }
+
+
+    .sectionheadertext {
+        font-size: 1.6rem;
+        line-height: 5rem;
+        text-transform: uppercase;
+        color: #0077A3;
+        font-family:'montserratlight', Arial;
+        margin-left: 1rem;
+    }
+
+
+    .aboutmewide {
 	    display: none;
 	}
 	.aboutmenarrow {
@@ -773,13 +967,14 @@ MEDIA QUERIES
 		width: -webkit-calc(100% / 3);
 		width: calc(100% / 3);
 	}
-	.aboutblockbelow {
-	    height: 13em;
-	    margin: 20.5em 0 0 0;
-	}
+    .aboutblockbelow {
+        height: 16rem;
+        margin: 23rem 0 0 0;
+        display: block;
+    }
 	
 	.pagingbox div p span{
-	    font-size: .75em;
+	    font-size: 1.2rem;
 	}
 	#roundheader {
 	    display: block;
@@ -787,6 +982,47 @@ MEDIA QUERIES
 	#longheader {
 	    display: none;
 	}
+    ul {
+    font-size: 1.2rem;
+    }
+
+    .projtitle {
+        width: 100%;
+        float: left;
+        margin: 2rem 0 0 0;
+        font-family: 'open_sanssemibold';
+        letter-spacing: 0px;
+    }
+
+    .projtitle h3 {
+        font-size: 1.8rem;
+        color: #0077A3;
+        font-family: 'montserratlight';
+        text-transform: uppercase;
+        letter-spacing: 0px;
+    }
+
+    .projsection h5 {
+        font-size: 1.4rem;
+        font-family: 'montserratlight';
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        color: #323232;
+    }
+
+    .projsection p {
+        font-size: 1.2rem;
+        font-family: 'open_sansregular';
+        letter-spacing: 0px;
+    }
+
+    .topsection {
+        padding: 20px 0;
+        background-image: url(../img/tahoe_tall.jpg);
+        background-size: cover;
+    }
+}
+
 }
 
 
