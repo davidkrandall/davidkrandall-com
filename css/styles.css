@@ -669,14 +669,14 @@ MEDIA QUERIES
 @media screen and (max-width: 5000px) {
 
     .aboutsectionheader {
-        height: 8.00rem;
+        height: 10.00rem;
         background-color: rgba(239, 239, 239, 0.6);
     }
 
     .sectionheadertext {
         padding-top: 0;
         font-size: 2.4rem;
-        line-height: 8rem;
+        line-height: 10rem;
         text-transform: uppercase;
         color: #0077A3;
         font-family:'montserratlight', Arial;
@@ -723,7 +723,7 @@ MEDIA QUERIES
     }
     .hero-text {
         margin: 30% 8rem 10% 8rem;
-        color: white;
+        color: #333333;
     }
     .hero-text h1 {
         font-size: 7.200rem;
@@ -779,7 +779,7 @@ MEDIA QUERIES
 
     .topsection {
         padding: 20px 0;
-        background-image: url(../img/tahoe.jpg);
+        background-image: url(../img/scarf_crop.png);
         background-size: cover;
     }
 
@@ -798,9 +798,23 @@ MEDIA QUERIES
     .cbp-contentslider nav a {
         font-size: 1.2rem;
     }
+
     .hero-text {
-        margin: 25% 8rem 5% 8rem;
-        color: white;
+        margin: 25% 8rem 5% 4rem;
+    }
+
+    .hero-text h1 {
+        font-size: 6rem;
+        font-family: 'montserratbold', Arial;
+        font-weight: normal;
+        letter-spacing: 0;
+    }
+
+    .hero-text h3 {
+        font-size: 2.4rem;
+        font-family: 'montserratlight', Arial;
+        font-weight: 100;
+        letter-spacing: 0;
     }
 
 }
@@ -814,7 +828,6 @@ MEDIA QUERIES
 
     .hero-text {
         margin: 25% 8rem 5% 4rem;
-        color: white;
     }
 
     .hero-text h1 {
@@ -911,7 +924,7 @@ MEDIA QUERIES
 	}
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 490px) {
 
     html, body, .container, .main {
         height: 45rem;
@@ -924,18 +937,17 @@ MEDIA QUERIES
 
     .hero-text {
         margin: 30% 4rem 5% 2rem;
-        color: white;
     }
 
     .hero-text h1 {
-        font-size: 3.4rem;
+        font-size: 2.4rem;
         font-family: 'montserratbold', Arial;
         font-weight: normal;
         letter-spacing: 0;
     }
 
     .hero-text h3 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         font-family: 'montserratlight', Arial;
         font-weight: 100;
         letter-spacing: 0;
@@ -1003,9 +1015,18 @@ MEDIA QUERIES
 
     .topsection {
         padding: 20px 0;
-        background-image: url(../img/tahoe_tall.jpg);
+        background-image: url(../img/scarf_tall.jpg);
         background-size: cover;
     }
+
+    .aboutsectionheader {
+        height: 8.00rem;
+    }
+
+    .sectionheadertext {
+        line-height: 8rem;
+        margin-left: 1rem;
+        font-size: 2.0rem;
 }
 
 }
