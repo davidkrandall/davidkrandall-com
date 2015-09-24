@@ -669,13 +669,14 @@ MEDIA QUERIES
 @media screen and (max-width: 5000px) {
 
     .aboutsectionheader {
-        height: 10.00rem;
+        height: 8.00rem;
         background-color: rgba(239, 239, 239, 0.6);
     }
 
     .sectionheadertext {
-        font-size: 2rem;
-        line-height: 10rem;
+        padding-top: 0;
+        font-size: 2.4rem;
+        line-height: 8rem;
         text-transform: uppercase;
         color: #0077A3;
         font-family:'montserratlight', Arial;
@@ -939,22 +940,6 @@ MEDIA QUERIES
         font-weight: 100;
         letter-spacing: 0;
     }
-
-    .aboutsectionheader {
-        height: 5.00rem;
-        background-color: rgba(239, 239, 239, 0.6);
-    }
-
-
-    .sectionheadertext {
-        font-size: 1.6rem;
-        line-height: 5rem;
-        text-transform: uppercase;
-        color: #0077A3;
-        font-family:'montserratlight', Arial;
-        margin-left: 1rem;
-    }
-
 
     .aboutmewide {
 	    display: none;
